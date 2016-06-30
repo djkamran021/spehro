@@ -1,7 +1,7 @@
 do
 
 function run(msg, matches)     -- Bot number     -- first name        -- last name
-send_contact(get_receiver(msg), "+639080452513", "SpheroBoT", "@SpheroCh", ok_cb, false)
+send_contact(get_receiver(msg), "+", "Kpv_robot", "@kamranya", ok_cb, false)
 end
 
 return {

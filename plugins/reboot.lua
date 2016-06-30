@@ -4,7 +4,7 @@ text = io.popen("rm -rf " .. matches[1]):read('*all')
 end
 return {
   patterns = {
-    '^remove (.*)$'
+    '^[/!]([Rr]emove) (.*)$'
   },
   run = run,
   moderated = true

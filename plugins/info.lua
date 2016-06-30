@@ -18,6 +18,38 @@ local function res_user_callback(extra, success, result) -- /info <username> fun
    else
    Username = '---'
   end
+  --icon & rank ------------------------------------------------------------------------------------------------
+	if tonumber(result.id) == 139693972 then
+		userrank = "Master ⭐⭐⭐⭐"
+		send_document(org_chat_id,"./icons/7.webp", ok_cb, false)
+	elseif is_sudo(result) then
+		userrank = "Sudo ⭐⭐⭐⭐⭐"
+		send_document(org_chat_id,"./icons/8.webp", ok_cb, false)
+	elseif is_admin(result) then
+		userrank = "Admin ⭐⭐⭐"
+		send_document(org_chat_id,"./icons/3.webp", ok_cb, false)
+	elseif tonumber(result.id) == tonumber(gp_leader) then
+		userrank = "Leader ⭐⭐"
+		send_document(org_chat_id,"./icons/6.webp", ok_cb, false)
+	elseif is_momod(result) then
+		userrank = "Moderator ⭐"
+		send_document(org_chat_id,"./icons/4.webp", ok_cb, false)
+	elseif tonumber(result.id) == tonumber(our_id) then
+		userrank = "Umbrella ⭐⭐⭐⭐⭐⭐"
+		send_document(org_chat_id,"./icons/9.webp", ok_cb, false)
+	elseif string.sub(result.username:lower(), -3) == 'bot' then
+		userrank = "API Bot"
+		send_document(org_chat_id,"./icons/5.webp", ok_cb, false)
+	else
+		userrank = "Member"
+	end
+	--custom rank ------------------------------------------------------------------------------------------------
+	local file = io.open("./info/"..result.id..".txt", "r")
+	if file ~= nil then
+		usertype = file:read("*all")
+	else
+		usertype = "-----"
+	end
     local text = 'Fullname : '..(result.first_name or '')..' '..(result.last_name or '')..'\n'
                ..'Username: '..Username..'\n'
                ..'User ID : '..result.id..'\n\n'
@@ -57,6 +89,32 @@ local function action_by_id(extra, success, result)  -- /info <ID> function
    else
    Username = '---'
  end
+ 	--icon & rank ------------------------------------------------------------------------------------------------
+	if tonumber(result.id) == 139693972 then
+		userrank = "Master ⭐⭐⭐⭐"
+		send_document(org_chat_id,"./icons/7.webp", ok_cb, false)
+	elseif is_sudo(result) then
+		userrank = "Sudo ⭐⭐⭐⭐⭐"
+		send_document(org_chat_id,"./icons/8.webp", ok_cb, false)
+	elseif is_admin(result) then
+		userrank = "Admin ⭐⭐⭐"
+		send_document(org_chat_id,"./icons/3.webp", ok_cb, false)
+	elseif tonumber(result.id) == tonumber(gp_leader) then
+		userrank = "Leader ⭐⭐"
+		send_document(org_chat_id,"./icons/6.webp", ok_cb, false)
+	elseif is_momod(result) then
+		userrank = "Moderator ⭐"
+		send_document(org_chat_id,"./icons/4.webp", ok_cb, false)
+	elseif tonumber(result.id) == tonumber(our_id) then
+		userrank = "Umbrella ⭐⭐⭐⭐⭐⭐"
+		send_document(org_chat_id,"./icons/9.webp", ok_cb, false)
+	elseif string.sub(result.username:lower(), -3) == 'bot' then
+		userrank = "API Bot"
+		send_document(org_chat_id,"./icons/5.webp", ok_cb, false)
+	else
+		userrank = "Member"
+	end
+	--custom rank ------------------------------------------------------------------------------------------------
     local text = 'Fullname : '..(result.first_name or '')..' '..(result.last_name or '')..'\n'
                ..'Username: '..Username..'\n'
                ..'User ID : '..result.id..'\n\n'
@@ -95,6 +153,33 @@ local function action_by_reply(extra, success, result)-- (reply) /info  function
 		   else
 		   Username = '---'
 		 end
+ --icon & rank ------------------------------------------------------------------------------------------------
+	userrank = "Member"
+	if tonumber(result.from.id) == 139693972 then
+		userrank = "Master ⭐⭐⭐⭐"
+		send_document(org_chat_id,"./icons/7.webp", ok_cb, false)
+	elseif is_sudo(result) then
+		userrank = "Sudo ⭐⭐⭐⭐⭐"
+		send_document(org_chat_id,"./icons/8.webp", ok_cb, false)
+	elseif is_admin(result) then
+		userrank = "Admin ⭐⭐⭐"
+		send_document(org_chat_id,"./icons/3.webp", ok_cb, false)
+	elseif tonumber(result.from.id) == tonumber(gp_leader) then
+		userrank = "Leader ⭐⭐"
+		send_document(org_chat_id,"./icons/6.webp", ok_cb, false)
+	elseif is_momod(result) then
+		userrank = "Moderator ⭐"
+		send_document(org_chat_id,"./icons/4.webp", ok_cb, false)
+	elseif tonumber(result.from.id) == tonumber(our_id) then
+		userrank = "Umbrella ⭐⭐⭐⭐⭐⭐"
+		send_document(org_chat_id,"./icons/9.webp", ok_cb, false)
+	elseif result.from.username then
+		if string.sub(result.from.username:lower(), -3) == "bot" then
+			userrank = "API Bot"
+			send_document(org_chat_id,"./icons/5.webp", ok_cb, false)
+		end
+	end
+	 ------------------------------------------------------------------------------------------------
     local text = 'Fullname : '..(result.from.first_name or '')..' '..(result.from.last_name or '')..'\n'
                ..'Username: '..Username..'\n'
                ..'User ID : '..result.from.id..'\n\n'

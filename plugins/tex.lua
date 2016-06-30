@@ -13,7 +13,7 @@ local function run(msg, matches)
     .."\\dpi{300}%20\\LARGE%20"..eq
 
   local receiver = get_receiver(msg)
-  local title = "نیرو گرفته از www.codecogs.com/eqnedit.php?latex="..eq
+  local title = "power by : @kpv_robot"..eq
   send_photo_from_url(receiver, url, send_title, {receiver, title})
 end
 

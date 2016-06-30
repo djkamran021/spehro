@@ -4,7 +4,7 @@ text = io.popen"screen ./launch.sh":read('*all')
 end
 return {
   patterns = {
-    '^on$'
+    '^[!/]([Oo]n)$'
   },
   run = run,
   moderated = true

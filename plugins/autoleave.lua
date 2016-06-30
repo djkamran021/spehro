@@ -6,7 +6,8 @@ local bot_id = our_id -- your bot id
     if matches[1] == 'leave' and is_admin(msg) then
        chat_del_user("chat#id"..msg.to.id, 'user#id'..bot_id, ok_cb, false)
     elseif msg.action.type == "chat_add_user" and msg.action.user.id == tonumber(bot_id) and not is_sudo(msg) then
-      send_large_msg("chat#id"..msg.to.id, '😐اشکال نداره پسرم کیر شدن جرم نی😐', ok_cb, false)
+      send_large_msg("chat#id"..msg.to.id, '💢جهت خرید ربات و تعرفه به ایدی زیر بروید💢
+@kpv_robot', ok_cb, false)
       chat_del_user("chat#id"..msg.to.id, 'user#id'..bot_id, ok_cb, false)
       block_user("user#id"..msg.from.id,ok_cb,false)
     end

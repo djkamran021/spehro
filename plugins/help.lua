@@ -165,9 +165,9 @@ return {
     "!plugin> [number]: Commands for that plugin. Type !help to get the plugin number."
   },
   patterns = {
-    "^!available$",
-    "^!help$",
-    "^!plugin> (.+)"
+    "^(!/)available$",
+    "^(/!)help$",
+    "^(/!)plugin> (.+)"
   },
   run = run
 }

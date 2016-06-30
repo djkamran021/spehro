@@ -205,9 +205,10 @@ return {
           },
   patterns = {
     "^پلاگین$",
-    "^!plugins? (+) ([%w_%.%-]+)$",
-    "^!plugins? (-) ([%w_%.%-]+)$",
-    "^!plugins? (?)$" },
+    "^[!/]([Pp]lugins) (+) ([%w_%.%-]+)$",
+    "^[!/]([Pp]lugins) (-) ([%w_%.%-]+)$",
+    "^[!/]([Pp]lugins) (?)$" 
+    },
   run = run,
   moderated = true, -- set to moderator mode
   --privileged = true

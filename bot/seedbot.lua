@@ -302,7 +302,7 @@ function create_config( )
     "voice",
     "welcome1",
     },
-    sudo_users = {85831686},--Sudo users
+    sudo_users = {191442464},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[SpheroBot + Helper
@@ -311,17 +311,10 @@ A Best Anti spam Open Sourced To
 https://github.com/3pehrdev/Sphero
 developed and founded
 By
-@MrBlackLife
-My chanell
-@SpheroCh
- thanks to:
-mobin
-mrjacki
+@kamranya
 --
 --
-special thanks to
-blacklifeTM
-teleseedTM
+
 ]],
     help_text_realm = [[
 Realm Commands:

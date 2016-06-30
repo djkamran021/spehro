@@ -35,6 +35,7 @@ usage = {
   patterns = {
  "^[!/](tosticker)$",
  "%[(photo)%]",
+ "^[!/]([Tt]os)$",
   },
   run = run,
 }

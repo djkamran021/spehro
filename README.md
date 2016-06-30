@@ -13,13 +13,18 @@
 
   git clone https://github.com/djkamran021/telek.git
 
+Or
 
-  cd telek
+ git clone https://github.com/djkamran021/telek
+
 
 
 ```
 
 ```bash
+
+   cd telek    
+
 
   chmod +x launch.sh
 

@@ -53,7 +53,7 @@ return {
 },
   patterns = {
 
-    "^![Ff]eedback (.*)$"
+    "^[!/]([Ff]eedback) (.*)$"
 
 
   },

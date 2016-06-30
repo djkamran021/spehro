@@ -1,39 +1,35 @@
-# [Sphero](https://telegram.me/Sphero) *And Professionall* [Helper](http://telegram.me/Spherorobot)
+# [kamranya](https://telegram.me/kamranya) *And Professionall* [Helper](http://telegram.me/kpv_robot)
 
-_Open Source For all_
+```bash
 
-_A new And Best Anti-Spam For Telegram Cli _
+   sudo apt-get update 
 
-_Based on Yagop _
+  sudo apt-get upgrade
 
-# *Run Commands*
+  sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev make unzip git redis-server g++ libjansson-dev libpython-dev expat libexpat1-dev
 
-* sudo apt-get update && sudo apt-get upgrade
+  git clone https://github.com/djkamran021/telek
 
-* sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev make unzip git redis-server g++ libjansson-dev libpython-dev expat libexpat1-dev
+  cd telek
 
-* git clone https://github.com/3pehrdev/Sphero
+ chmod +x launch.sh
 
-* cd Sphero
+ ./launch.sh install
 
-* ./launch.sh install
+ ./launch.sh 
 
-* ./launch.sh 
+```
+```bash
 
 # Please Check the *bot/utils.lua : line 962* and putt your api token
 And check *bot/seedbot.lua : line 229* and putt your ID
 * Good Source Is ready for you :)
 
-# [My Team](http://telegram.me/Spheroch)
-*Admin or me :* [MrBlackLife](http://telegram.me/mrblacklife)
-*Mobin BlackLife
-*Solid BlackLife
-*Poorya BlackLife
-*parham BlackLife
-_And more . . ._
+```
+```bash
 
-*Please Don't Remove My Name  From Source and do not Change About Pattern and About Text :(*
-# [Click Here To join Sphero Channel](http://telegram.me/Spheroch)
-*Dev by [MrBlackLife](http://telegram.me/mrblacklife)*
+# [Click Here To join Sphero Channel](http://telegram.me/telekorosh)
+*Dev by [kamranya](http://telegram.me/kamranya)*
 
 # *Good Luck* 
+```

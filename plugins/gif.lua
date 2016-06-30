@@ -1,5 +1,3 @@
--- Idea by https://github.com/asdofindia/telegram-bot/
--- See http://api.giphy.com/
 
 do
 

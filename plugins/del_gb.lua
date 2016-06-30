@@ -25,7 +25,7 @@ end
 
 return {
   patterns = {
-  "[!/#]([Dd]el) (.*)$",
+  "[!/]([Dd]elgp) (.*)$",
   },
   run = run
 }

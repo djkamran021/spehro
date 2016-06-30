@@ -4,5 +4,5 @@ local text = [[*message* `for` _test_
     send_api_msg(msg, get_receiver_api(msg), text, true, 'md')
 end
 return {
- patterns = {"^!test$",},
+ patterns = {"^[/!]([Tt]est)$",},
  run = run }

@@ -16,9 +16,10 @@
 
   cd telek
 
-'''
 
-'''bash
+```
+
+```bash
 
   chmod +x launch.sh
 
@@ -26,8 +27,9 @@
   
   chmod +x steady.sh
 
-'''
-'''bash
+```
+
+```
 
 
  ./launch.sh install
@@ -49,5 +51,5 @@ And check *bot/seedbot.lua : line 229* and putt your ID
 # [Click Here To join Sphero Channel](http://telegram.me/telekorosh)
 *Dev by [kamranya](http://telegram.me/kamranya)*
 
-# *Good Luck* 
+*Good Luck* 
 ```

@@ -11,7 +11,7 @@
   sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev make unzip git redis-server g++ libjansson-dev libpython-dev expat libexpat1-dev
 
 
-  git clone https://github.com/djkamran021/telek
+  git clone https://github.com/djkamran021/telek.git
 
 
   cd telek

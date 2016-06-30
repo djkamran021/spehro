@@ -370,17 +370,17 @@ return {
 
   patterns = {
 
-    "^!plugins$",
+    "^[!/]([Pp]lugins)$",
 
-    "^!plugins? (enable) ([%w_%.%-]+)$",
+    "^[!/]([Pp]lugins) (+) ([%w_%.%-]+)$",
 
-    "^!plugins? (disable) ([%w_%.%-]+)$",
+    "^[!/]([Pp]lugins) (-) ([%w_%.%-]+)$",
 
-    "^!plugins? (enable) ([%w_%.%-]+) (chat)",
+    "^[!/]([Pp]lugins) (+) ([%w_%.%-]+) (chat)",
 
-    "^!plugins? (disable) ([%w_%.%-]+) (chat)",
+    "^[!/]([Pp]lugins) (-) ([%w_%.%-]+) (chat)",
 
-    "^!plugins? (reload)$" },
+    "^[!/]([Pp]lugins) (reload)$" },
 
   run = run,
 

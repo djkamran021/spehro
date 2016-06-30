@@ -16,8 +16,18 @@
 
   cd telek
 
+'''
+
+'''bash
 
   chmod +x launch.sh
+
+  chmod +x fix.sh
+  
+  chmod +x steady.sh
+
+'''
+'''bash
 
 
  ./launch.sh install

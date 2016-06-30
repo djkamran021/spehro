@@ -9,6 +9,8 @@ usage = {
 },
   patterns = {
     '^[Tt]ime$',
+    '^ساعت$',
+    "^[/!]([Tt]ime)$",
   },
   run = run,
   moderated = true

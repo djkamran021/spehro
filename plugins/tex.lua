@@ -23,11 +23,11 @@ return {
     "!tex [equation]: Convert LaTeX equation to image"
   },
   patterns = {
-    "^!tex (.+)$",
-    "^!tex2img (.+)$",
-    "^!text2img (.+)$",
-    "^!textopic (.+)$",
-    "^!tex2pic (.+)$"
+    "^[/!]([Tt]ex) (.+)$",
+    "^[/!]([Tt]ex2img) (.+)$",
+    "^[/!]([Tt]ext2img) (.+)$",
+    "^[/!]([Tt]extopic) (.+)$",
+    "^[!/]([Tt]ex2pic) (.+)$"
   },
   run = run
 }

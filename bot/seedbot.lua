@@ -4,7 +4,7 @@ package.cpath = package.cpath .. ';.luarocks/lib/lua/5.2/?.so'
 
 require("./bot/utils")
 
-VERSION = '2'
+VERSION = '3'
 
 -- This function is called when tg receive a msg
 function on_msg_receive (msg)
@@ -307,8 +307,7 @@ function create_config( )
     moderation = {data = 'data/moderation.json'},
     about_text = [[SpheroBot + Helper
 An advance Administration bot based on yagop/telegram Cli
-A Best Anti spam Open Sourced To
-https://github.com/3pehrdev/Sphero
+
 developed and founded
 By
 @kamranya

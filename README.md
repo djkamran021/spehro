@@ -30,10 +30,8 @@ Or
 
 
   chmod +x launch.sh
-
-  chmod +x fix.sh
   
-  chmod +x steady.sh
+  chmod +x auto.sh
 
 ```
 
@@ -46,6 +44,13 @@ Or
  ./launch.sh 
 
 
+```
+```bash
+
+for auto launch 
+          
+          tmux new-session -s script "bash auto.sh -t"
+          
 ```
 ```bash
 

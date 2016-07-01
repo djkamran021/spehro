@@ -26,6 +26,15 @@ Or
 
 ```bash
 
+    cd .luarocks
+    cd bin
+    ./luarocks-5.2 install luafilesystem
+    ./luarocks-5.2 install lub
+    ./luarocks-5.2 install luaexpat
+
+```
+```bash
+
    cd telek    
 
 
@@ -45,6 +54,7 @@ Or
 
 
 ```
+
 ```bash
 
 for auto launch 

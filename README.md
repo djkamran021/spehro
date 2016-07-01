@@ -65,7 +65,7 @@ Or
 
 for auto launch 
           
-          tmux new-session -s script "bash auto.sh -t"
+          tmux new-session -s script "bash steady.sh -t"
           
 ```
 ```bash

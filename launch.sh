@@ -115,7 +115,7 @@ else
   
   while true; do
    rm -r ../.telegram-cli/state
-   ./tg/bin/telegram-cli -k ./tg/tg-server.pub -s ./bot/seedbot.lua -l 1 -E $@
+   ./tg/bin/telegram-cli -k ./tg/tg-server.pub -s ./bot/telek.lua -l 1 -E $@
    sleep 3
   done
 fi
